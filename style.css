@@ -475,6 +475,48 @@ p {
     font-size: 1.1rem;
   }
 }
+.section.support {
+  background-color: #f7f9fb;
+  padding: 4rem 2rem;
+}
+
+.support-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.support-column {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+.support-column h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #0c1b2d;
+}
+
+.support-column p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+.custom-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.custom-list li {
+  margin-bottom: 0.75rem;
+}
 
 @media (max-width: 768px) {
   .thermal-performance {
@@ -764,11 +806,15 @@ p {
 .feature-item h3 {
   color: #0c1b2d;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .feature-item p {
   color: #666;
   line-height: 1.6;
+  text-align: left;
+  word-spacing: -0.03em;
+  font-size: 1.07296rem;
 }
 
 /* Performance Comparison */
