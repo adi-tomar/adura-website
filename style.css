@@ -76,7 +76,6 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  background: url("Picture1.png") no-repeat center center/cover;
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
 }
 .hero-content h1 {
@@ -468,6 +467,50 @@ p {
     margin-bottom: 3rem;
   }
 }
+.features-table-container {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.features-table-container h2 {
+ margin-top: 3rem;
+ margin-bottom: 1.5rem;
+ font-size: 2rem;
+ text-align: center;
+  color: #0c1b2d;
+}
+.features-datatable {
+  width: 80%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.features-datatable th,
+.features-datatable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.features-datatable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.features-datatable tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.features-datatable th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
 
 /* Automotive Section */
 .automotive {
@@ -487,7 +530,11 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.features-grid-four {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
 .headlight-item {
   width: 100%;
 }
@@ -503,6 +550,11 @@ p {
   .headlight-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
+  }
+}
+@media (max-width: 1024px) {
+  .features-grid-four {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
